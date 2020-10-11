@@ -14,5 +14,26 @@
   <a href="/">Home</a>
   <a href="/page1">Page 1</a>
   <a href="/page2">Page 2</a>
+  <a href="/page4">Page 4</a>
+  <a href="/getDogName">Show Name</a>
+
+  <form method="POST" action="/addDog">
+    <label for="name">Name:</label>
+    <input type="text" name="name" id="name">
+    <label for="breed">Breed:</label>
+    <input type="text" name="breed" id="breed">
+    <label for="age">Age:</label>
+    <input type="number" name="age" id="age">
+    <input type="submit" value="Submit">
+  </form>
+  
+  <br/>
+  <br/>
+  
+  <form action="/findByDogName" method="GET">
+    <label for="name">Name to search for:</label>
+    <input type="text" name="name" value="">
+    <input type="submit" value="Submit">
+  </form>
 </body>
 </html>
